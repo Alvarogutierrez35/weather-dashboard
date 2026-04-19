@@ -1,16 +1,36 @@
-# React + Vite
+# Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es una dashboard que hice para ver el clima de una ciudad que escojas, lo hice en React y con una API de OpenWeatherMap.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Buscar el clima de cualquier ciudad del mundo
+- Temperatura actual, sensación térmica, humedad y viento
+- Íconos dinámicos según el estado del clima
+- Manejo de errores para ciudades no encontradas
 
-## React Compiler
+## Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 18
+- Vite
+- Tailwind CSS
+- OpenWeatherMap API
 
-## Expanding the ESLint configuration
+## Si quieres clonar el repo, aqui te lo dejo.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+git clone https://github.com/Alvarogutierrez35/weather-dashboard.git
+cd weather-dashboard
+npm install
+```
+
+Crea un archivo `.env` en la raíz con tu API key de OpenWeatherMap (Probablemente se demore en activar la key, asi que si no funciona es por eso.)
+
+```
+VITE_WEATHER_API_KEY=tu_api_key_aqui
+```
+
+```bash
+npm run dev
+```
+
